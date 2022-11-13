@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+/* header styles */
+
+.facebook-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.facebook-header__left {
+    display: flex;
+    align-items: center;
+}
+
+.facebook-header__left img {
+    width: 50px;
+}
+
+.header-left__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f0f2f5;
+    padding: 8px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.header-left__form span {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header-left__form input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: #f0f2f5;
+    outline: none;
+}
+
+.facebook-header__center {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.facebook-header__center span,
+.facebook-header__center i {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.facebook-header__center span:hover {
+    background-color: #f0f2f5;
+    color: #1b74e4;
+}
+.facebook-header__center span::after {
+    content: '';
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    background-color: #1b74e4;
+    left: 0;
+    bottom: -10px;
+}
+
+.facebook-header__center span:first-child::after {
+    width: 100%;
+}
+
+.facebook-header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 10px;
+}
+
+.facebook-header__right span,
+.facebook-header__right i {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.facebook-header__right span:hover,
+.facebook-header__right i:hover {
+    background-color: #f0f2f5;
+}
+
+/* facebook-sidebar__section styles */
+
+.facebook-sidebar__icon,
+.facebook-sidebar-icon__user {
+    display: flex;
+}
+
+.facebook-sidebar__icon span, .facebook-sidebar-icon__user span{
+    padding: 20px 10px;
+}
+
+.facebook-sidebar-icon__user, .facebook-sidebar__icon {
+    border-radius: 30px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.facebook-sidebar__icon:hover, .facebook-sidebar-icon__user:hover {
+    background-color: #f0f2f5;
+}
+
+.facebook-sidebar {
+    width: 350px;
+    padding: 15px;
+    overflow-y: scroll;
+}
